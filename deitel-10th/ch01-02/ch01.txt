@@ -1,0 +1,53 @@
+1.1)	a)	programs
+		b)	input, output, memory, ALU, CPU, secondary storage
+		c)	machine, assembly and high-level
+		d)	compilers
+		e)	Android
+		f)	release candidates
+		g)	an accelerometer
+
+1.2)	a)	java
+		b)	javac
+		c)	.java
+		d)	.class
+		e)	bytecode
+
+1.3)	a)	encapsulation
+		b)	classes
+		c)	OOAD
+		d)	inheriting/extending
+		e)	UML
+		f)	attributes.
+
+1.4)	a)	input
+		b)	programming
+		c)	assembly
+		d)	output
+		e)	memory and secondary storage units
+		f)	ALU
+		g)	ALU?
+		h)	high-level	
+		i)	machine language
+		j)	CPU
+
+1.5)	a)	Java
+		b)	C
+		c)	Transmission Control Protocol (TCP)
+		d)	C++
+
+1.6)	a)	edit, compile, load, verify, execute
+		b)	IDE
+		c)	JVM
+		d)	Virtual Machine
+		e)	JVM's class loader
+		f) bytecode verifier
+	
+1.7)	interpretation and just-in-time, to optimised machine-language,
+		compilation of program hot-spots.
+
+1.8)	Watch is an object.
+		Attributes are things like a strap, dial, display mechanism.
+		Behaviours include telling and setting the time.
+		From the inheritance of generic clocks.
+		Interface could be dial or buttons. Encapsulation because we don't
+			need to know how the internals work.

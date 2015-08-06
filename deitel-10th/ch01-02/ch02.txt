@@ -1,0 +1,91 @@
+2.1)	a)	{, }
+		b)	if
+		c)	//
+		d)	blank lines, tabs and spaces
+		e)	keywords
+		f)	main
+		g)	System.out {print, println, printf}
+
+2.2)	a)	No, // are comments.
+		b)	True (no Hindley-Milner type inference :( )
+		c)	No, case sensitivity.
+		d)	No, but I don't know how it would work with floats/doubles.
+		e)	No, algebraic, then left to right.
+
+2.3)	a)	int c, thisIsAVariable, q76354; (can be on new lines/each with int)
+		b)	System.out.print("Enter an integer: ");
+		c)	c = input.nextInt(); (where Scanner input = new Scanner(System.in);)
+		d)	System.out.println("This is a Java program");
+		f)	if (c != 7)
+				System.out.println ("This variable number is not equal to 7.");
+
+2.4)	a)	Semi-colon on if line
+		b)	It should be >=
+
+2.5)	a)	// This program will calculate the product of three integers.
+		b)	Scanner input = new Scanner(System.in);
+		c)  int x, y, z;
+		d)	System.out.print("Enter first integer: ");
+		e)	x = input.nextInt();
+		f)	System.out.print("Enter second integer: ");
+		g)	y = input.nextInt();
+		h)  System.out.print ("Enter third integer: ");
+		i)	z = input.nextInt();
+		j)	int result = x * y * z;
+		k)	System.out.printf("Product is %d", result);
+	
+2.6)	See Prod.java
+
+2.7)	a)	Comments
+		b)	if statement
+		c)	arithmetic?
+		d)	/ and %
+		e)	innermost
+		f)	variable
+
+2.8)	a)	System.out.print("Enter an integer: ");
+		b)	a = b*c;
+		c)	// This program performs a payrolll calculation.
+
+2.9)	a)	Except for assignment operator.
+		b)	True
+		c)	False, operators *, / and % get higher precedence than + and -.
+		d)	False, h22 works is ok.
+
+2.10)	a)	x = 2 (newline)
+		b)	Value of 2 + 2 is 4 (newline)
+		c)	x = (no newline)
+		d)	5 = 5 (newline)
+
+2.11)	a), ha, no, d).
+
+2.12)	a), d), e)
+
+2.13)	a)	x = 7 + 3 * 6 / 2 - 1
+			  5   3   1   2   4
+		b)	x = 2 % 2 + 2 * 2 - 2 / 2
+		      6   1   4   2   5   3
+		c)	x = (3 * 9 * (3 + (9 * 3 / (3))))
+		      6    4   5    3    1   2
+
+2.14)	See Print.java.
+
+2.15)	See Arith.java
+
+2.16)	See Compare.java
+
+2.17)	See Mean.java
+
+2.18)	See Shapes.java
+
+2.19)	A right-anlged triangle.
+
+2.20)	Exactly what it looks like.
+
+2.21)	All asterisks on one line.
+
+2.22)	This ****
+			 ****
+			 ******
+
+2.23)	A right-angled triangle.

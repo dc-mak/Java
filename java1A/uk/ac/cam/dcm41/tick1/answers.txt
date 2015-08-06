@@ -1,0 +1,21 @@
+1) i = 1;                          //update i with the value 1
+   i = i + 1;                      //update i with value of "i + 1"
+   System.out.println(i = 9);              //print out the current value of i
+   dcm41@pccl060:~/jars$ java -jar PrimitiveInt.jar
+   9
+
+2) dcm41@pccl060:~$ java -jar PrimitiveInt.jar
+   10
+   9
+   Because j-- is a post-decrement operator on j. It means it decrements j, after it is used.
+
+3) dcm41@pccl060:~$ java -jar PrimitiveInt.jar
+   9
+   9
+
+4) i)  0x55 = 101101, hence x = 3.
+   ii) 0x55 = 5*16 + 5 = 85. 10880/85 = 128 = 2^7, 7.
+
+5) Because you are shifting each bit into a column twice its value, n-shifts = 2^n. It's the equivalent of multiplying by 10 in decimal.
+
+6) x>>4 & 1

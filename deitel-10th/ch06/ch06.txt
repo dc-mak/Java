@@ -1,0 +1,102 @@
+6.1)	a)	method call
+		b)	local variable
+		c)	return
+		d)	void
+		e)	top
+		f)	LIFO
+		g)	return, return exp, } (for void only)
+		h)	java.security.SecureRandom;
+		i)	stack frame, activation record
+		j)	stack overflow
+		k)	? X scope
+		l)	overloading
+
+6.2)	a)	Class/instance - Craps
+		b)	method - rollDice
+		c)	Class/instance - Craps
+		e)	main
+
+6.3)	Yes (ugh.. see Maths.java)
+
+6.4)	a)	double hypotenuse(double side1, double side2)
+		b)	int smallest (int x, int y, int z)
+		c)	void instructoions()
+		d)	float intToFloat(int number)
+
+6.5)	a)	method nesting not allowed
+		b)	no return statement
+		c)	local shadowing
+		d)	void method type, int return type
+
+6.6)	See Sphere.java
+
+6.7)	a)	7.5
+		b)	7
+		c)	0.0
+		d)	0.0
+		e)	6.4
+		f)	-6.0
+		g)	-14
+
+6.8)	See Parking.java
+
+6.9)	See Round.java
+6.10)	See Round.java
+
+6.11)	a)	Each number in the given domain has an equally likely chance of being chosen.
+		b)	It generates "truly" random numbers, seeded from the current time.
+			They are non-deterministic.
+		c)	The range is from -2^31 to 2^31 - 1 which is not always necessary.
+		d)	Inexpensive, can be "sped up", run thousands of different variations.
+
+6.12)	a)	n = 1 + rand.nextInt(2);
+		b)	n = 1 + rand.nextInt(100);
+		c)	n =		rand.nextInt(9);
+		d)	n = 1000 + rand.nextInt(13);
+		e)	n = -1 + rand.nextInt(3);
+		f)	n = -3 + rand.nextInt(14);
+
+6.13)	a)	2 + 2*rand.nextInt(5);
+		b)	3 + 2*rand.nextInt(5);
+		c)	6 + 4*rand.nextInt(6);
+
+6.14)	See IntPow.java
+
+6.15)	See Hypot.java
+
+6.16)	See Multiples.java.
+6.17)	Not worth doing. See Multiples.java.
+
+6.18)	See Square.java
+6.19)	See Square.java
+
+6.20)	See Circle.java
+
+6.21)	See Digits.java
+
+6.22)	See Temp.java
+
+6.23)	See Min.java
+
+6.24)	See Perfect.java
+
+6.25)	See Prime.java
+
+6.26)	See Rev.java
+
+6.27)	See GCD.java
+
+6.28)	I don't even see the point of this. (See Quality.java).
+
+6.29)	See Flip.java
+
+6.30)	See Guess.java
+6.31)
+
+6.32)	See Dist.java
+
+6.33)	See Craps2.java
+
+6.34)	See BinOctHex.java
+
+6.35)	See Quiz.java and QuizTest.java

@@ -1,0 +1,171 @@
+7.1)	a)	arrays and ArrayLists X Collections
+		b)	objects X variables, type
+		c)	for-each / enhanced for
+		d)	index (or subscript)
+		e)	two-dimensional
+		f)	for (double d: numbers)
+		g)	args (String[])
+		h)	args.length
+		i)	test
+		j)	ellipsis
+
+7.2)	a)	false, one type per array
+		b)	false, integers only
+		c)	if primitive type, then false, pass by value, otherwise true
+		d)	false
+
+7.3)	a)	final int ARRAY_SIZE = 10;
+		b)	double[] fractions = new double[ARRAY_SIZE];
+		c)	fractions[4];
+		d)	fractions[9] = 1.667;
+		e)	fractions[6] = 3.333;
+		f)	int total = 0; X double
+			for (int x = 0; x < fractions.length; x++)
+				total += fractions[x];
+			// or
+			int total = 0;
+			for (double x : fractions)
+				total += x;
+
+7.4)	a)	int[][] table = new int[ARRAY_SIZE][ARRAY_SIZE];
+		b)	9
+		c)	for (int row = 0; row < table.length; row++)
+				for (int col = 0; col < table[row].length; col++)
+					table[row][col] = row+col;
+
+7.5)	a)	Reassignment of finalized integer.
+		b)	< b.length
+		c)	a[1][1]
+
+7.6)	a)	p[0], p[1], p[2], p[3]
+		b)	initialising
+		c)	array,contents? row/column?
+		d)	m, n, m*n elements
+		e)	d[3][5]
+
+7.7)	a)	false, the index, not the contents
+		b)	true
+		c)	false, int[] p = new int[100];
+		d)	true
+		e)	true
+
+7.8)	a)	f[6];
+		b)	for (int i = 0; i < g.length; i++)
+				g[i] = 8;
+		c)	float total = 0;
+			for (int i = 0; i < c.length; i++)
+				total += c[i];
+		d)	System.arraycopy(a, 0, b, 0, a.length);
+		e)	float min = w[0];
+			float max = w[0];
+			for (float f : w)
+			if (f < min)
+				min = f
+			else if (f > max)
+				max = f;
+
+7.9)	a)	int[] t = new int[2][3];
+		b)	2
+		c)	3
+		d)	6
+		e)	t[1][0], t[1][1], t[1][2]
+		f)	t[0][2], t[1][2]
+		g)	t[0][1] = 0;
+		h)	t[0][0] = 0;
+			t[0][1] = 0;
+			t[0][2] = 0;
+			t[1][0] = 0;
+			t[1][1] = 0;
+			t[1][2] = 0;
+		i)	for (int[] a : t)
+				for (int x: a)
+					x = t;
+		j)	for (int[] a : t)
+				for (int x : a)
+					x = input.nextInt();
+			with appropriate prompts and Scanner input.
+		k)	int min = t[0][0];
+			for (int[] xx : t)
+				for (int x : xx)
+					if (x < min)
+						min = x;
+			Sys...println(min);
+		l)	Sys...println(t[0].toString);
+			Sys...println("%d, %d, %d", t[0][0], t[0][1], t[0][2]);
+		m)	t[0][2] + t[1][2];
+		n)	for (int[] a : t) {
+				for (int x : a)
+					Sys...print(x+"\t");
+				Sys..println();
+			}
+
+7.10)	See Sales.java
+
+7.11)	a)	Arrays.fill(count, 0);
+	 	  	for (int c : count) c = 0;
+	 	b)	for (int b : bonus) b += 1;
+	 	c)	for (int bS : bestScores)
+			if (bestScores.hasNext())
+				System.out.print(bs+"\t");
+			else
+				System.out.printf(bs+"\n");
+
+7.12)	See Dupes.java
+
+7.13)	Bijection is as follows 3*row + col+1.
+
+7.14)	See VariableArgs.java
+
+7.15)	See InitArray.java
+
+7.16)	See Sum.java
+
+7.17)	See Dice.java
+
+7.18)	See Craps.java
+
+7.19)	See Plane.java
+
+7.20)	See TotalSales.java and TotalSalesTest.java
+
+7.21)	See Turtle.java and TurtleTest.java
+
+7.22)	b)	See Knight.java
+		c)	See Knight2.java
+		d)	See Knight3.java
+
+7.23)
+
+7.24)
+
+7.25)
+
+7.26)
+
+7.27)	See Eratosthenes.java
+
+7.28)	See Race.java
+
+7.29)	See Fib.java. Largest is 73rd: 1582441984
+
+7.30)
+
+7.31)
+
+7.32)
+
+7.33)
+
+7.34)
+
+7.35)
+
+7.36)
+
+7.37)
+
+7.38)
+
+7.39)	See GradeBook.java and GradeBookTest.java
+
+7.40)	See Questionnaire.java

@@ -1,0 +1,19 @@
+# Thank you GitHub
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# java1A
+java1A/.metadata/**
+
+# Deitel and Deitel 10th
+deitel-10th/examples/**

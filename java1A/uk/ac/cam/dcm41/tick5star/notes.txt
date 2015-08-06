@@ -1,0 +1,20 @@
+The program takes 3 arguments. Should less than 3 arguments be provided, a helpful error message should be displayed.
+
+The first argument should a string of the form:
+
+	name:author:width:height:startcol:startrow:cells
+
+where all the fields are seperated by colons. Fields name and author are strings; width, height, startcol and startrow are all positive integers specifying the size of the grid and starting position of the pattern provided by cells.
+
+Cells is a pattern of 0s and 1 to signify the initial pattern. Adjacent numbers represent adjacent columns of cells and spaces are used to separate the rows.
+
+The second argument should be an integer that specifies the number of generations of the board to be encoded into audio.
+
+The third argument should be the filename of the output, a .wav file.
+
+A world must be created based on the entered information. That world should be able to update itself using the rules of the Game of Life.
+
+For each generation, each cell in the world will have its own timeslot. Each cell will have a frequency and an amplitude assigned to it by the algorithm specified below. When all the sounds have been appended, the file should be written to disk.
+
+To create a rough, simple 12 bar-blues (see online), for dead cells, the row index will be taken modulo 12, each chord will have 3 notes, so the cell index can be taken modulo 3.
+For alive cells, the tonic will be played louder than the dead cells at in an actave above all of them.

@@ -1,0 +1,118 @@
+5.1)	a)	for, while
+		b)	after
+		c)	switch
+		d)	continue
+		e)	&&, conditional and
+		f)	false
+		g)	helper X static
+
+5.2)	a)	false
+		b)	false
+		c)	false
+		d)	true
+		e)	false, dependent on locale X true
+		f)	false
+		g)	true
+
+5.3)	a)	int total = 0;
+			for (int i = 1; i <= 99; i += 2) // X use increment += 2
+					total += i;
+		b)	Math.pow (2.5, 3.0);
+		c)	int i = 1;
+			System.out.println();
+			while (i <= 20) {
+				System.out.print (i);
+				if (i % 5 == 0)
+					System.out.println();
+				else 
+					System.out.print ('\t');
+				i++;
+			}
+		d)	for (int i = 1; i <= 20; i++) {
+				System.out.print (i);
+				if (i % 5 == 0)
+					System.out.println();
+				else
+					System.out.print ('\t');
+			}
+
+5.4)	a)	semi-colon after while (remove it)
+		b)	Use integers! (imprecise doubles)
+		c)	No break after case 1
+		d)	n <= 10
+
+5.5)	control variable, initial value, increment, (loop-continuation) condition
+
+5.6)	Apart from continues in for, you can swap one out for another (even
+		then, wrapping the body of the while in an if-else could do the
+		equivalent). For-loops are usually used for counter-controlled
+		repetitions whereas while-loops are used for sentinel-based ones (generally).
+
+5.7)	When a minimum of one input is needed from the user.
+
+5.8)	break stops the loop, continue skips over the current iteration from that point on.
+
+5.9)	a)	semi-colons, not commas.
+		b)	No break after case 0.
+		c)	-= not +=
+		d)	Capital W in while instead of lowercase.
+
+5.10)	Prints a 10x5 grid of @ symbols
+
+5.11)	See Min.java
+
+5.12)	total = 1;
+		for (int i = 1; i <= 15; i += 2)
+			total *= i;
+
+5.13)	See Factorial.java
+
+5.14)	See Interest.java
+
+5.15)	See Patterns.java
+
+5.16)	See BarChart.java
+
+5.17)	See Sales.java
+
+5.18)	See Interest2.java
+
+5.19)	a)	true
+		b)	false
+		c)	true
+		d)	false
+		e)	true
+		f)	false
+		g)	false 
+
+5.20)	I don't like this one. See PiApprox.java. More than 200,002 apparently.
+
+5.21)	See PythagTriples.java (LISP indentation, haha).
+		Note (a) brute force and (b) duplication of results because addition is commutative.
+
+5.22)	See ModPatterns.java
+
+5.23)	I am not writing a program for this.
+		a)	!p && !q  = !(p || q)	=>	!(x < 5 || y >= 7)
+		b)	!p || !q  = !(p && q)	=>  !(a = b && g != 5)
+		c)	!(p && q) =  !p || !q	=>	 (x > 8 || y <= 4)
+		d)	!(p || q) =  !p && !q	=>	 (i <= 4 && j > 6)
+
+5.24)	and 5.25) See Diamond.java
+
+5.26)	See BreakTest.java. Basically, put the negation of the break; conditional
+		in conjunction with the loop-header condition. You if-statements to
+		control the code being executed *after* the break.
+
+5.27)	Prints five 3x4 grids of stars, the next below the previous.
+
+5.28)	Again, if-statement with the negation of the continue condition over
+		the body of the rest of the loop from the continue point.
+
+5.29)	See Christmas.java
+
+5.30)	See AutoPolicy.java and AutoPolicyTest.java
+
+5.31)	Ok, I'll create a dummy quiz (see Quiz.java).
+
+5.32)	See Tax.java (I really miss arrays.)

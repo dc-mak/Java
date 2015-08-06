@@ -1,0 +1,6 @@
+Longest start: gliderless (1304)
+Longest cycle: factory (287)
+Biggest growth rate: glider synthesis (1.2222222222222223)
+Biggest death rate: glider synthesis (0.55)
+Largest population: spacefiller (849)
+

@@ -1,0 +1,75 @@
+9.1)	a)	inheritance
+		b)	public, protected
+		c)	is-a
+		d)	has-a
+		e)	hierarchical
+		f)	protected
+		g)	constructor
+		h)	super
+
+9.2)	a)	true
+		b)	false
+		c)	false
+		d)	false, override
+
+9.3)	See *ComissionEmployee*.java files.
+
+9.4)	Objects that can be grouped together under common attributes
+		can share code about those attributes without explicit annotation.
+		This reduces errors and duplication of effort.
+		It also makes it easy to introduce changes tht propograte throughout
+		all inherited classes instead of having to manually update all.
+		Easier to locate errors because errors can be classified as specific
+		to a class or a superclass.
+		Only the changes/specialisations need be included in derived classes.
+
+9.5)	Student
+		Undergrad						Postgrad
+		Part I				Part II		Part III/Masters	PhD
+		Part IA		Part IB
+		They're all students...
+
+9.6)	Shape
+		Dimesions:	1		2		3		...
+							Polygon		Non-polygons
+							points
+
+9.7)	Protected for anything that can be allowed to be overriden by a
+		subclass.
+
+		Private allows other users of a library to extend the class without
+		seeing the internals (JPanel, JLabel, JFrame etc.)
+
+9.8)	Quadrilateral
+		Trapezium	Parallelogram
+					Rectangle
+					Square
+		See Point.java, Quadrilateral.java, Trapezium.java,
+			Parallelogram.java, and Rect.java Square.java.
+
+9.9)	a)	Calls method earnings() in the class that it is extending
+			(direct superclass).
+		b)	There is method of the same name within the direct superclass
+			whose inherited behaviour is being changed.
+		c)	The superclass' constructor is given these arguments to return
+			an object of that type to be extended as below.
+
+9.10)	a)	class PieceWorker extends Employee
+		b)	super.toString()
+		c)	super(first, last, ssn);
+
+9.11)	Constructors are chained, all the way up to Object (usually, implicitly)
+		so each inherited class' object must be instantiated before the rest
+		of the object is (due to the dependencies between them).
+
+9.12)	If you are overriding a method and the superclass' method does part
+		of the necessary work/needs changing only a bit.
+
+9.13)	It promotes encapsulation, which is good software engineering.
+		In the specific case given, it means the getter has already done most
+		of the work by formatting the fields beforehand and the toString()
+		method of the subclass only needs to deal with the extra field.
+
+9.14)	See Employee.java and the ones of 9.3.
+
+9.15)	See HourlyEmployee.java and the ones of 9.14.

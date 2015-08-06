@@ -1,0 +1,63 @@
+8.1)	a)	static import X on demand
+		b)	format
+		c)	shadows
+		d)	services, interface
+		e)	import X single type import
+		f)	default constructor
+		g)	toString
+		h)	accessor, query
+		i)	predicate
+		j)	values
+		k)	has-a
+		l)	enum
+		m)	static
+		n)	single static import
+		o)	principle of least privilige
+		p)	final
+		q)	type import on demand
+		r)	mutator methods
+		s)	BigDecimal
+		t)	throw
+
+8.2)	Package access is the default access level.
+		Files in the same directory are considered to be in the same package.
+		It allows multiple classes of the same package to access members
+		directly through references.
+		Doesn't adhere to the principle of least privilige.
+
+8.3)	Method overloading kicks in and it is no longer a constructor.
+
+8.4)	See Rect.java and RectTest.java
+
+8.5)	See Time2.java and TimeTest.java
+
+8.6)	see Savings.java and SavingsTest.java
+
+8.7)	See Tick.java and TickTest.java
+
+8.8)	See Date.java
+
+8.9)	import static java.lang.Math.sqrt;
+		import static java.lang.Math.ceil;
+		import static java.lang.Math.E;
+		import static java.lang.Math.PI;
+
+8.10)	See TrafficTest.java
+
+8.11)	See Complex.java and ComplexTest.java
+
+8.12)	See DateTime.java and DateTimeTest.java
+
+8.13)	See IntegerSet.java and IntegerSetTest.java
+
+8.14)	See Date2.java and Date2Test.java
+
+8.15)	See Rational.java and Rational Test.java
+
+8.16)
+
+8.17)
+
+8.18)	See Account.java and AccountTest.java
+
+8.19)

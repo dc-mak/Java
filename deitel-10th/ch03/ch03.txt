@@ -1,0 +1,61 @@
+3.1)	a)	public
+		b)	class
+		c)	new
+		d)	type and a name
+		e)	default package
+		f)	float and double
+		g)	64-bit
+		h)	nextDouble
+		i)	modifier
+		j)	void
+		k)	nextLine
+		l)	java.lang
+		m)	import declaration
+		n)	float/double
+		o)	32-bit
+		p)	%.nf (where n is a natural number)
+		q)	primitive and reference
+		
+3.2)	a)	false, camelcase.
+		b)	true
+		c)	true
+		d)	false
+		e)	false
+		f)	true
+		g)	true X false
+		h)	true
+		j)	true
+		k)	false, doubles
+
+3.3)	Local means local to a method whereas instance is part of class' attributes.
+
+3.4)	To specify the number, type and name of the arguments required to complete its task.
+
+3.5)	The new operator requests memory for the object to be created and calls
+		its constructor.
+
+3.6)	Default constructors are provided by the compiler if none are explicity
+		created. The initialise all instance to default values.
+
+3.7)	Part of the class' attributes; available to each method.
+
+3.8)	They are part of java.lang and so are imported by default.
+
+3.9)	By using the class' fully qualified class name.
+
+3.10)	To control the access and presentation of its values to external classes.
+		Allows validity checks for setting variables.
+
+3.11)	See Account.java and AccountTest.java
+
+3.12)	See Invoice.java and InvoiceTest.java
+
+3.13)	See Employee.java and EmployeeTest.java
+
+3.14)	See Date.java and DateTest.java
+
+3.15)	Same as 3.11.
+
+3.16)	See HeartRates.java and HeartRatesTest.java
+
+3.17)	See HealthProfile.java and HealthProfileTest.java

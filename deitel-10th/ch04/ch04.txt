@@ -1,0 +1,187 @@
+4.1)	a)	sequence, selection, repetition
+		b)	if else
+		c)	definite (counter-controlled)
+		d)	sentinel
+		e)	sequence
+		f)	0/0.0
+		g)	strongly typed
+		h)	prefixed
+
+4.2)	a)	true
+		b)	true x false they meant () as parentheses
+		c)	false (while)
+		d)	true
+		e)	true
+		f)	false
+		g)	true
+		h)	false
+		i)	false, false
+		j)	true
+
+4.3) ++x; x++; x += 1; x = x+1;
+
+4.4)	a)	z = y + x++;
+		b)	if (count > 10)
+				System.out.println ("Count is greater than 10");
+		c)	total -= --x
+		d)	q = q % divisor
+			q %= divisor
+
+4.5)	a)	int sum = 0;
+		b)	int x = 1;
+		c)	sum += x;
+		d)	System.out.printf ("The sum is %d", sum);
+
+4.6)	See Sum.java
+
+4.7)	product *= x++;
+		product = product * x++;
+		product = product * (x before x = x + 1);
+		product = 5 * (5 before x = 5 + 1);
+		product = 25, x = 6.
+
+4.8)	a)	c = 1; // Assumption
+			while (c <= 5) {
+				product *= c;
+				++c;
+			}
+		b)	Remove semi-colon after else.
+
+4.9) z is not udpated in the body of the loop so if it is true once, it will
+	 loop forever.
+
+4.10)	If during the course of the initial execution of the loop (if executed
+		at all) the looping condition would become false, then it's the same as
+		a single-selection if statement.
+
+4.11)	Truncation (floor of the result as a floating-point number).
+		Fractional part is lost. By storing % the divisor in a separate variable.
+
+4.12)	Sequencing and nesting.
+
+4.13)	For 100, counter-controlled. For arbitrary, probably sentinel-based (0)
+		repetition, but if you needed it to be different on each run but knew
+		in advance how many per run, you could you a count-controlled rep.
+
+4.14)	++x = add 1 to x and return the result
+		x++ = return x and then add 1 to it
+
+4.15)	a)	semi-colon after if condition.
+		b)	Depends on the context. If total and x are local to a method then
+			total needs to be initialised to 0. If total and x are instance variables,
+			then total is automatically initialised to 0.
+		c)	Infinite loop/x in preincremented
+		d)	Missing }
+
+4.16)	Sum of squares from 1 to 10.  (2*10+1)*10*11/6 = 7*5*11 = 385
+
+4.17)	Calculate mileage.
+
+		Take miles and gallons.
+		Return mpg for trip and so far.
+
+		Miles = 0, gallons = 0.
+
+		Take first input.
+		if -1 then end
+			else while input != -1
+			show trip mpg
+			show mpg so far
+
+4.18)	Input customer details and judge if credit limit has been exceeded.
+		
+		While customer detail are being input
+			update customer record
+			calculate balance
+			check if credit limit has been exceeded.
+
+4.19)	Given a list of items and quantities, calculate the commision
+		+ salary of a salesperson.
+
+		Get number of item 1
+		if > 0 then * 239.99 * 0.09 else 0
+		Get number of item 2
+		if > 0 then * 129.75 * 0.09 else 0
+		Get number of item 3
+		if > 0 then * 99.95 * 0.09 else 0
+		Get number of item 4
+		if > 0 then * 350.89 * 0.09 else 0
+
+		Add 'em all up + 200 and return
+
+4.20)	Given a list of employees, hours worked and hourly rates, determine and
+		display the employee's gross pay (taking into account 1.5x for overtime).
+
+4.21)	largest = input
+		count = 2
+		while count <= 10
+			next = input
+			if next > largest
+				largest = next
+			count++
+		print largest
+	
+4.22)	See Tabular.java
+
+4.23)	See Largest2.java
+
+4.24)	See Analysis.java
+
+4.25)	****
+		+++++++ (5 times, *s for odd, +s for even)
+
+4.26)	<<<<<<<<<<<<
+		>>>>>>>>>>>> (10 times, < for odd rows, > for even rows)
+
+4.27)	for (x,y) = (9,11) or (11,9)
+		if (x < 10)
+			if (y > 10)
+				System.out.println ("*****");
+			else
+				System.out.println ("#####");
+		System.out.println ("$$$$$"); 
+
+		So for the first: ***** then $$$$$
+				  second: $$$$$ (corrected)
+
+4.28)	if (y == 8)
+			if (x == 5)
+				System.out.println ("@@@@@");
+			else
+				System.out.println ("#####");
+		System.out.println ("$$$$$");
+		System.out.println ("&&&&&");
+		
+		a)  Keep as is.
+		b)	if (y == 8) { // and (c) and (d)
+				if (x == 5) {
+					Sys...
+				} else {
+					Sys...
+					Sys...
+					Sys...
+				}
+			}
+
+4.29)	See Square.java
+
+4.30)	See Palindromes.java
+
+4.31)	See Binary.java
+
+4.32)	See Checkerboard.java
+
+4.33)	See Infinite.java. As expected, it overflows quickly.
+
+4.34)	The increment operators can only be applied to one variable.
+		Try x+y+1.
+
+4.35)	See Triangle.java
+
+4.36)	See RightTriangle.java
+
+4.37)	See Factorial.java
+
+4.38)	See Crypt.java
+
+4.39)	See Population.java
