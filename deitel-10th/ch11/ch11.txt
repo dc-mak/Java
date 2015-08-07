@@ -1,0 +1,70 @@
+11.1)	ArrayIndex, Numerical (Overflow/Underflow, Divide by 0, floating
+		point ones), IllegalArguments, stack-overflow.
+
+11.2)	They are descriptive ? X
+		Allows the user to deal with the correct error handling for their
+		situation instead of foisting a standard onto everyone that may not
+		apply.
+
+11.3)	A situation where references to objects are held unnecessarily and so 
+		memory usage builds up without the garbage-collector freeing it up.
+		More generally, when a rogue process/piece of code does not dispose of
+		the resource it is using after its use has been fulfilled.
+
+11.4)	Finally/after the end of try-block.
+
+11.5)	Catches all exceptions (well this is kinda bad) but can be good as a
+		default.
+
+11.6)	No, Error objects represent something that usually cannot be recovered
+		from on the Java back-end and so should be avoided.
+
+11.7)	The finally-block (if there is one) executes and then stack-unwinding:
+		exception is passed on to the caller of the method.
+			Also:
+			#	checked exceptions not caught or declared will not compile
+			#	no other try/catch blocks cause stack-trace to be printed.
+
+11.8)	They are matched in the order they are declared.
+
+11.9)	To avoid handling all subclass exceptions separately.
+
+11.10)	To free up resources and tidy up after execution has been interrupted.
+
+11.11)	The finally-block executes and the Exception is passed on to the caller.
+
+11.12)	Makes the finally-block (if present) execute before passing on the
+		object to the exception handler of the caller.
+
+11.13)	It goes out of scope and so is inaccessible.
+
+11.14)	Challenge accepted:
+			#	ArrayIndexOutOfBoundsException
+				-	test for 0 <= and < limit
+			#	IllegalArgumentException
+				-	provide a valid argument
+			#	ArithmeticException
+				-	check operands before operation
+			#	NumberFormatException
+			#	InputMisMatchException
+				-	Correct inputs/input validation
+			#	IOException
+				-	More an unchecked one
+			#	NullPointerException
+				-	test for == null
+
+11.15)	It can be done at any time, e.g. even after a call to super.
+		It prevents the creation of an object, rather than creating it with a
+		message out System.out.print.
+
+11.16)	See ExceptionA.java, ExceptionB.java, ExceptionC.java and ABCTest.java
+			
+11.17)	See BadPractice.java
+
+11.18)	See Order.java
+
+11.19)	See SomeClass.java and SomeClassTest.java
+
+11.20)	See Rethrow.java
+
+11.21)	See Scopes.java and ScopesTest.java

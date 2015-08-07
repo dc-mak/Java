@@ -22,7 +22,9 @@ public class HourlyEmployee extends Employee {
 
 	public double getHours() { return hours; }
 	public double getWage()  { return wage;  }
-	public double earnings() { return hours*wage; }
+	public double earnings() {
+		return wage * (hours > 40.0 ? 40.0 + 1.5*(hours-40.0) : hours);
+	}
 
 	public void setHours(double h) {
 		if (h < 0.0 || 168.0 > h)

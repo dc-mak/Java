@@ -1,4 +1,4 @@
-// GUI Ex 10.1: Introducing inheritance.
+// GUI Exercise for Chapter 10: Inheritance.
 
 import java.awt.Color;
 import java.awt.Graphics;

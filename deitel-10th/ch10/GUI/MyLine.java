@@ -1,4 +1,4 @@
-// GUI Exercise for Chapter 8.
+// GUI Exercise for Chapter 10: Inheritance.
 
 import java.awt.Color;
 import java.awt.Graphics;

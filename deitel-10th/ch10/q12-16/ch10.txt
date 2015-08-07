@@ -1,0 +1,75 @@
+10.1)	a)	abstract
+		b)	concrete
+		c)	Polymorphism
+		d)	abstract
+		e)	down-casting/narrowing
+
+10.2)	a)	false, abstract class just means partial implementation
+		b)	false, types check out
+		c)	false, the subclass may be abstract as well
+		d)	true
+
+10.3)	a)	default methods
+		b)	static helper
+		c)	functional interface
+
+10.4)	By declaring comman interfaces (through abstract classes or interfaces)
+		polymorphism allows objects to respond to an inherited method in a way
+		specific to its type/class.
+		It allows systems to be extended afterwards more easily as long as new
+		objects inherit from a common superclass and abstracts away implementation
+		details.
+
+10.5)	Abstract methods are methods which do not provide any implementation
+		details. In addition to previous examples about moving, drawing and
+		calculating earnings, you could have a class of sorting algorithms but
+		each sorting algorithm would implement sort, min, max, nth differently.
+
+10.6)	By allowing types/classes to be programmed for in the general (with a
+		consistent interface) but executing code of the specific.
+
+10.7)	superclass - superclass
+		subclass   - subclass
+		superclass - subclass
+
+10.8)	With abstract classes, you can:
+			#	declare non-static and non-final fields
+			#	define public, protected and private concrete methods
+		With interfaces:
+			#	all fields are public, static and finals
+			#	all methods declared/defined (with default) are public.
+
+		You would use abstract classes for
+			-	sharing code among loosely related classes
+			-	e.g. common methods which require
+			-	require other access modifiers other than public
+			-	to declare non-static and non-final fields.
+		You would use interfaces for
+			-	unrelated classes but common interaction method
+			-	specify behaviour of a datatype
+			-	multiple inheritance.
+
+10.9)	Default methods allow inherited classes to implement their own methods 
+		if need be but allow existing classes to use the interface and default
+		to the defined one (and so compile without errors).
+
+10.10)	An interface with only one method defined.
+
+10.11)	It eliminates the need to define static helper methods in another class
+		that implements the interface.
+
+10.12)	See Birthday.java, Employee.java, BasePlusCommissionEmployee.java,
+		CommissionEmployee.java, HourlyEmployee.java, SalariedEmployee.java.
+
+10.13)	See Shape.java, 2DShape.java, 3DShape.java, Circle.java, Square.java,
+		Triangle.java, Sphere.java, Cube.java, Tetrahedron.java
+
+10.14)	See PayrollSystemTest.java, PieceWorkerEmployee.java and all from
+		10.12 except Birthday.java.
+
+10.15)	See Payable.java, Invoice.java and all from 10.14 except
+		PayrollSystemTest.java.
+
+10.16)	See the same as before. I thought it would be easier to do this!
+
+10.17)	See Bicycle.java, Car.java, Building.java, CarbonFootprint.java.
