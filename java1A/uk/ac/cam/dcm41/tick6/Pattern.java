@@ -11,34 +11,14 @@ public class Pattern {
 	private int startRow;
 	private String cells;
 
-	//Getter methods.
-	public String getName() {
-		return name;
-	}
-
-	public String getAuthor() {
-		return author;
-	}
-
-	public int getWidth() {
-		return width;
-	}
-	
-	public int getHeight() {
-		return height;
-	}	
-
-	public int getStartCol() {
-		return startCol;
-	}
-
-	public int getStartRow() {
-		return startRow;
-	}
-
-	public String getCells() {
-		return cells;
-	}
+	// Get ter methods.
+	public String getName()     { return name;     }
+	public String getAuthor()   { return author;   }
+	public int    getWidth()    { return width;    }
+	public int    getHeight()   { return height;   }
+	public int    getStartCol() { return startCol; }
+	public int    getStartRow() { return startRow; }
+	public String getCells()    { return cells;    }
 
 	//Constructor: .split returns an array so you need to create a new one to take it.
 	public Pattern(String format) throws PatternFormatException  {
@@ -95,6 +75,7 @@ public class Pattern {
 	}
 
 	public void printAll() {
-				System.out.println(name+":"+author+":"+width+":"+height+":"+startCol+":"+startRow+":"+cells);
+		System.out.println(name+":"+author+":"+width+":"+height+
+							":"+startCol+":"+startRow+":"+cells);
 	}
 }

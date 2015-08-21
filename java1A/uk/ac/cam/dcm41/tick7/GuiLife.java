@@ -27,8 +27,8 @@ public class GuiLife extends JFrame {
 	private GamePanel gamePanel;
 	
 	private World world;
-	private int timeDelay = 500;		//delay between updates (ms)
-	private int timeStep = 0;			//progress by 2^timeStep each time
+	private int timeDelay = 500;		// delay between updates (ms)
+	private int timeStep = 0;			// progress by 2^timeStep each time
 	private Timer playTimer = new Timer(timeDelay, new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			doTimeStep();
@@ -77,43 +77,48 @@ public class GuiLife extends JFrame {
 
 	private JComponent createSourcePanel() {
 		JPanel result = new SourcePanel(){
-			protected boolean setSourceFile() { //Try getting a file locally.
-				JFileChooser chooser = new JFileChooser(); //Open an file picker.
+
+			protected boolean setSourceFile() { // Try getting a file locally.
+
+				JFileChooser chooser = new JFileChooser(); // Open an file picker.
 				int returnVal = chooser.showOpenDialog(this);
-				if (returnVal == JFileChooser.APPROVE_OPTION) { //Valid option.
-					File f = chooser.getSelectedFile(); //Select file
-					try { //Attempt to load patterns.
+
+				if (returnVal == JFileChooser.APPROVE_OPTION) { // Valid option.
+					File f = chooser.getSelectedFile(); // Select file
+
+					try { // Attempt to load patterns.
 						List<Pattern> list = PatternLoader.load(new FileReader(f));
 						patternPanel.setPatterns(list);
 						resetWorld();
-						return true; //Success so return true!
-					} catch (IOException ioe) {} //Do nothing about a failure.
+						return true; // Success so return true!
+					} catch (IOException ioe) {} // Do nothing about a failure.
 				}
-				return false; //And simply return false in that case.
+
+				return false; // And simply return false in that case.
 			}
 
-			protected boolean setSourceNone() { //No source.
-				world = null; //No world 
-				patternPanel.setPatterns(null); //No pattern
+			protected boolean setSourceNone() { // No source.
+				world = null; // No world 
+				patternPanel.setPatterns(null); // No pattern
 				resetWorld();
-				return true; //Always successful
+				return true; // Always successful
 			}
-			protected boolean setSourceLibrary() { //Return string of online library.
-				String u = "http://www.cl.cam.ac.uk/teaching/current/ProgJava/nextlife.txt";
+			protected boolean setSourceLibrary() { // Return string of online library.
+				String u = "http:// www.cl.cam.ac.uk/teaching/current/ProgJava/nextlife.txt";
 				return setSourceWeb(u);
 			}
-			protected boolean setSourceThreeStar() { //Return string of online competition.
-				String u = "http://www.cl.cam.ac.uk/teaching/current/ProgJava/competition.txt";
+			protected boolean setSourceThreeStar() { // Return string of online competition.
+				String u = "http:// www.cl.cam.ac.uk/teaching/current/ProgJava/competition.txt";
 				return setSourceWeb(u);
 			}
-			private boolean setSourceWeb(String url) { //Both online, hence common code.
-				try {	//Use pattern loader to load from url
+			private boolean setSourceWeb(String url) { // Both online, hence common code.
+				try {	// Use pattern loader to load from url
 					List<Pattern> list = PatternLoader.loadFromURL(url);
-					patternPanel.setPatterns(list); //Set patterns in patternPanel
+					patternPanel.setPatterns(list); // Set patterns in patternPanel
 					resetWorld();
-					return true; //Successful so return true.
+					return true; // Successful so return true.
 				} catch (IOException ioe) {}
-				return false; //If exception, do nothing and return false.
+				return false; // If exception, do nothing and return false.
 			}
 		};
 		addBorder(result, Strings.PANEL_SOURCE);
@@ -131,10 +136,10 @@ public class GuiLife extends JFrame {
 	}
 
 	private JComponent createControlPanel() {
-		//Anonymous inner class created using an abstract class so that
-		//the anonymous abstract inner methods can be implemented
-		//here with access/ability to call setDelay and playTimer
-		//without loads of parameter passing.
+		// Anonymous inner class created using an abstract class so that
+		// the anonymous abstract inner methods can be implemented
+		// here with access/ability to call setDelay and playTimer
+		// without loads of parameter passing.
 
 		controlPanel = new ControlPanel() {
 			protected void onSpeedChange(int value) {
@@ -151,7 +156,7 @@ public class GuiLife extends JFrame {
 		return controlPanel;
 	}
 
-	private void resetWorld() { //Given code.
+	private void resetWorld() { // Given code.
 		Pattern current = patternPanel.getCurrentPattern();
 		world = null;
 		if (current != null) {

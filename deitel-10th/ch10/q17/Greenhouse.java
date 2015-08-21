@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Greenhouse {
 	public static void main(String[] args){
-		 ArrayList<CarbonFootprint> emissions = new ArrayList<CarbonFootprint>();
+		 ArrayList<CarbonFootprint> emissions = new ArrayList<>();
 		 emissions.add(new Bicycle(2000));
 		 emissions.add(new Building(2340000));
 		 emissions.add(new Car(17000));

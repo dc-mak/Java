@@ -1,0 +1,111 @@
+18.1)	a)	false
+		b)	yes, but not in Java
+		c)	true
+		d)	false, smaller
+
+18.2)	d)	base case
+
+18.3)	a)	not recursive
+
+18.4)	c)	level
+
+18.5)	b)	termination step
+
+18.6)	a)	golden ratio/mean
+		b)	? selection statement
+		c)	self-similar
+
+18.7)	int sum(int x) {
+			if (x <= 0)
+				return 0;
+			return x + sum (x-1);
+		}
+
+18.8)	Print out the integers from 1 till n inclusive
+
+18.9)	// exp >= 0
+		int power(int base, int exp) {
+			if (exp <= 0)
+				return 1;
+			return base * power(base, exp-1);
+		}
+		// Alternatively...
+		int power(int base, int exp) {
+			if (exp <= 0)
+				return 1;
+			if (exp % 2 == 0)
+				return power(base*base, exp/2);
+			else
+				reutn base*power(base*base, exp/2);
+		}
+
+18.10)	   public static long factorial(long number, int indent)
+		   {
+			  if (number <= 1) { // test for base case
+				  for (int i = 0; i < indent; i++)
+					 System.out.printf("   ");
+				  System.out.printf("%2d!%n", number);
+				 return 1; // base cases: 0! = 1 and 1! = 1
+			  } else { // recursion step 
+				  for (int i = 0; i < indent; i++)
+					 System.out.printf("   ");
+				  System.out.printf("%2d*%2d!%n", number, number-1);
+				 return number * factorial(number - 1, indent+1);
+			  }
+		   } 
+
+18.11)	int gcd(int m, int n) {
+			if (m = 0)
+				return n;
+			else
+				return gcd (n % m, m);
+			}
+
+18.12)	Reverse an array in place
+
+18.13)	Prints an array backwards
+
+18.14)	double eapp(int n, double total) {
+			if (n == 0)
+				return total;
+			else
+				return e(n-1, 1.0+total/n); }
+		double e(int n) { return eapp(n, 1.0); }
+
+18.15)	See Queens.java
+
+18.16)	See Search.java
+
+18.17)	See 18.16
+
+18.18)	See 18.17
+
+18.19)	private final Color[] spiral =
+			{Color.YELLOW, Color.GREEN, Color.RED, Color.BLUE, Color.ORANGE };
+		public void paintComponent(Graphics g) {
+			...
+			for (int i = 0; i < spiral.length; i++) {
+				g.setColor(spiral[i]);
+				drawFractal(level, 200, 200,
+						(int) (200+100*Math.cos(Math.PI*(-0.5+0.4*i))),
+						(int) (200-100*Math.sin(Math.PI*(-0.5+0.4*i))), g); } }
+
+18.20)	See MazeTraverse.java
+
+18.21)
+
+18.22)	See 18.20
+
+18.23)  private static long calls = 0;
+		private static List<Long> times = new ArrayList<>();
+		public static BigInteger fibonacci(BigInteger number) {
+			calls++;
+			if (...) {
+				return number;
+			} else {
+				long start = System.currentTimeMillis();
+				BigInteger result = ...
+				long diff = start - System.currentTimeMillis();
+				if (diff > 0)
+					times.add(diff);
+				return result; } }

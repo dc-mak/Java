@@ -1,0 +1,60 @@
+14.1)	a)	false, == tests reference equality.
+		b)	false, strings are immutable.
+
+14.2)	a)	s1.equals(s2);
+		b)	s1 += s2;
+		c)	sl.length();
+
+14.3)	See Compare.java
+
+14.4)	See PortionComp.java
+
+14.5)	See RandSentences.java
+
+14.6)	See Limericks.java
+
+14.7)	See PigLatin.java
+
+14.8)	See Tokenizing.java
+
+14.9)	See Reverse.java
+
+14.10)	See UpperLower.java
+
+14.11)	See FindCharPos.java
+
+14.12)	See FindAlpha.java
+
+14.13)	See BFilter.java
+
+14.14)	See ED_Filter.java
+
+14.15)	See IntChar.java
+
+14.16)	See IndexOf.java
+
+14.17)	See ThreeFromFive.java
+
+14.18)	a)	See AlphaCount.java
+		b)	See	LengthCount.java
+		c)	See WordCount.java
+
+14.19)	See Dates.java
+
+14.20)	See Cheques.java
+
+14.21)	See 14.20
+
+14.22)	See Morse.java
+
+14.23)	See Conversion.java
+
+14.24)
+
+14.25)
+
+14.26)
+
+14.27)
+
+14.28)

@@ -25,7 +25,7 @@ public class Dupes {
 						   Arrays.toString(vals2));
 		
 		// Method 2
-		final ArrayList<Integer> vals = new ArrayList<Integer>();
+		final ArrayList<Integer> vals = new ArrayList<>();
 		for (int i = 0; i < LIMIT; i++) {
 			System.out.print("Enter number: ");
 			int x = getInt();

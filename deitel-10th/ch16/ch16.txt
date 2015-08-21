@@ -1,0 +1,102 @@
+16.1)	a)	Iterator
+		b)	index
+		c)	autoboxing
+		d)	Vector and ArrayList
+		e)	double
+		f)	unmodifiable wrapper
+		g)	autounboxing
+		h)	disjoint
+
+16.2)	a)	False, only objects so that wrapper classes.
+			However, wrapper classes do auto(un)boxing
+		b)	false, that's just not what a set does
+		c)	false, unique keys, not necessarily unique values
+		d)	true
+		e)	false + Collections is a class, Collection is an interface
+		f)	true
+		g)	false, increases
+		h)	false, throws NullPointerException
+
+16.3)	a)	An interface that contains operations for adding, comparing and
+			retaining objects in a collection, converting it to an array and
+			getting a collection's Iterator.
+		b)	A class that provides static methods for manipulating collections.
+		c)	A interface that defines an ordering for a type (usually) other than
+			the natural ordering in a Collection.
+		d)	An ordered collection that can contain duplicates.
+		e)	Ratio of number of occupied cells in a hash table to the total number
+			of cells in the hash table.
+		f)	When two distinct keys hash to the same hash value.
+		g)	A larger hash table results in fewer collisions hence better speed
+			but takes up more storage.
+		h)	An implementation of the Map interface using hashing.
+
+16.4)	a)	insert the element at the end/specified index
+		b)	set the element at specified index
+		c)	remove specified element from Vector
+		d)	removes all elements from the Vector
+		e)	removes element at given index
+		f)	returns first element (at index 0)
+		g)	returns last element (at index size()-1)
+		h)	true iff Vector contains specified element
+		i)	returns index of given element in if in array, otherwise one less
+			than the negative of the insertion point 
+		j)	number of elements in the Vector
+		k)	number of elements it can hold without needing to dynamically
+			allocate more memory
+
+16.5)	In the latter case, a new Vector of double its previous capacity must
+		be created, the elements must be copied over and then new element must
+		be inserted at the end where there is now space.
+
+16.6)	It allows/exposes access to methods that can be used to corrupt the
+		stack.
+
+16.7)	a)	Collection of values (set) vs collection of key-value pairs (map).
+		b)	It is autboxed into its wrapper class.
+		c)	Yes toArray() and for loop.
+
+16.8)	a)	returns an iterator to walk through each element in the collection
+		b)	boolean that indicates whether or not there are any elements left
+			in the collection
+		c)	moves the referenced object to the next object in the collection
+
+16.9)	a)	inserts/updates given key value pair into Map
+		b)	return value from Map given key
+		c)	boolean to test whether any key-value pairs are stored
+		d)	boolean to test whether specified key has stored value
+		e)	returns a Set of all keys used in the HashMap
+
+16.10)	a)	true
+		b)	true (lowest)
+		c)	false, will throw UnsupportedOperationException
+
+16.11)	a)	restore contents of Properties object from given Reader/InputStream
+		b)	save/write content of Properties object to given Writer/OutputStream
+		c)	finds String value associated with given key (optional second argument
+			which specifies the default return value if key is not present
+		d)	prints contents of Properties object to given PrintStream
+
+16.12)	List<String> list1 = new LinkedList(Arrays.asList(colors));
+		...
+		List<String> list2 = new LinkedList(Arrays.asList(colors2));
+
+16.13)	See Duplicate.java
+
+16.14)	See LetterCount.java
+
+16.15)	See ColourPalette.java. Package creation hasn't been covered.
+
+16.16)	See DuplicateCount.java
+
+16.17)	See Insert.java
+
+16.18)	See ReverseCopy.java
+
+16.19)	See PrimeFactors.java
+
+16.20)	See SortWords.java
+
+16.21)	import java.util.Collections;
+		...
+		PriorityQueue<Double> queue = new PriorityQueue<>(Collections.reverseCopy());

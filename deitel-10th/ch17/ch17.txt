@@ -1,0 +1,71 @@
+17.1)	a)	functional interfaces
+		b)	parallelize
+		c)	internal
+		d)	BinaryOperator<T>
+		e)	Predicate<T>
+		f)	lambda expression
+		g)	lazy
+		h)	eagerly X forEach
+		i)	capturing
+		j)	short-circuit
+		k)	key, value
+
+17.2)	a)	true
+		b)	false, intermediate ones are lazy, terminal ones are eager
+		c)	false, 0 for sum and 1 for product
+		d)	true
+		e)	false, it receives a Function that maps a objects to Stream
+		f)	false, it only happens when it doesn't override them
+
+17.3)	a)	(value) -> System.out.printf("%d ", value) 
+		b)	String::toUpperCase
+		c)	() -> "Welcome to lambdas!"
+		d)	Math::sqrt
+		e)	(x) -> x*x*x
+
+17.4)	a)	statements
+		b)	external
+		c)	immutability
+		d)	Consumer<T>
+		e)	Supplier<T>
+		f)	collections
+		g)	filter
+		h)	collect
+		i)	terminal
+		j)	splitAsStream
+		k)	abstract, default
+
+17.5)	a)	true
+		b)	false, they reduce them into one value
+		c)	range (top exclusive) and rangeClosed (top inclusive)
+		d)	true
+		e)	true, Map does not derive from Collection
+		f)	false, apply and compose
+		g)	true
+
+17.6)	a)	(double a, double b) -> { return a*b; }
+		b)	(a, b) -> { return a*b; }	
+		c)	(a,b) -> a*b
+		d)	() -> "Welcome to lambdas!"
+		e)	ArrayList::new
+		f)	button.addActionListener(
+				e -> JOPtionPane.showMessageDialog(this, "JButton event handler"));
+
+17.7)	Sum up all the even values in the stream.
+
+17.8)	Generate a million random values (either 1 or 2), box them for storing
+		in a map based on value, frequency, then for each key-value pair, printf
+		out the side (left aligned, 6 characters width) and frequency.
+
+17.9)	Change pattern to "". Change replaceAll to "\\p{P}|\\s+".
+
+17.10)	See FileTypes.java
+
+17.11)	See Invoice.java
+
+17.12)	See WordDuplicate.java
+
+17.13)	See LetterDuplicate.java
+
+17.14)		.map(x -> x*x)
+			.sum();

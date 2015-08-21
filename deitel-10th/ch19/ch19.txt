@@ -1,0 +1,21 @@
+19.1)	a)	16
+		b)	O (n lg n)
+
+19.2)	Divide and conquer
+
+19.3)	Insertion: impler to code, efficient on almost sorted arrays.
+		Merge: More efficient.
+
+19.4)	Recursion?
+
+19.5)	See Bubble.java
+
+19.6)	See 19.6.
+
+19.7)	See Bucket.java
+
+19.8)	See 19.5
+
+19.9)	See 19.8
+
+19.10)	See Quicksort.java

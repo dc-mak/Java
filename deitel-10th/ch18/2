@@ -1,0 +1,76 @@
+// Ex 18.20: Traversing a maze.
+
+public final class MazeTraverse {
+	private static final Random rand = new Random();
+
+	private final char[][] maze;
+
+	private static final int UP    = 0;
+	private static final int RIGHT = 1;
+	private static final int DOWN  = 2;
+	private static final int LEFT  = 3;
+
+	private static final char WALL = '#';
+	private static final char DEAD = '0';
+	private static final char ROAD = '.';
+	private static final char PATH = 'x';
+
+	private final int H;
+	private final int W;
+
+	private final Predicate<Integer,Integer> onBoard =
+		(r,c) -> 0 && r < H && c > 0 && c < W;
+
+	private final Predicate<Integer,Integer> visitable =
+		(r,c) -> onBoard(r,c) && maze[r][c] == ROAD;
+
+	private int endX;
+	private int endY;
+
+	public MazeTraversal(int W, int H, int endX, int endY, String[] mazeStr) {
+		this.W = W;
+		this.H = H;
+		maze = new char[H][W];
+		for (int r = 0; r < H; r++)
+			for (int c = 0; c < W; c++)
+				maze[r][c] = String[r].charAt(c);
+	}
+
+	private boolean mazeTraversal(int row, int col) {
+		if (!visitable.test(row,col))
+			return false;
+
+		maze[row][col] = PATH;
+
+		if (mazeTraversal(row-1, col)) // up
+			return true;
+		if (mazeTraversal(row, col+1)) // right
+			return true;
+		if (mazeTraversal(row+1, col)) // down
+			return true;
+		if (mazeTraversal(row, col-1)) // left
+			return true;
+
+		maze[row][col] = DEAD;
+		return false;
+	}
+
+	// TODO: en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker
+	// This seems interesting to do properly.
+	private void mazeGenerator() { }
+
+	public static void main(String[] args){
+		MazeTraverse m = new
+		"############",
+		"#...#......#",
+		"..#.#.####.#",
+		"###.#....#.#",
+		"#....###.#..",
+		"####.#.#.#.#",
+		"#..#.#.#.#.#",
+		"##.#.#.#.#.#",
+		"#........#.#",
+		"######.###.#",
+		"#......#...#",
+		"############",
+	}

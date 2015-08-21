@@ -1,0 +1,82 @@
+12.1)	a)	mouseMoved(MouseEvent event)
+		b)	uneditable
+		c)	Layout Manager
+		d)	Container (add(Component comp))
+		e)	Graphical User Interface
+		f)	setLayout(LayoutManager manager)
+		g)	? mousePressed, mouseReleased
+		h)	JOptionPane
+		i)	showInputDialog of JOptionPane
+		j)	showMessageDialog of JOptionPane
+		k)	JTextComponent
+
+12.2)	a)	true
+		b)	false, mouseEntered
+		c)	false, it's a component so it can.
+		d)	false, one will cover another
+		e)	true, but each can have multiple components inside it
+		f)	false
+		g)	false
+		h)	false
+
+12.3)	a)	JButton buttonName = new JButton ("Caption");
+		b)	JLabel aLabel = new JLabel();
+		c)	JTextField txtField = new JTextField("Default Text", 50);
+		d)	setLayout(new BorderLayout())
+			JButton button1 = new JButton("North Star");
+			JButton button2 = new JButton("South Pole");
+			add(button1); x add(button1, BorderLayout.NORTH);
+			add(button2); x add(button2, BorderLayout.NORTH);
+
+12.4)	a)	JTextComponent
+		b)	add
+		c)	mouseReleased before mouseClicked
+		d)	ButtonGroup?
+
+12.5)	a)	true
+		b)	If the border is specified, yes, otherwise they'll all be added to
+			CENTER by default and so only the last one will be visible.
+		c)	true, if they are part of the same ButtonGroup
+		d)	false, it's a JTextField method
+		e)	false, needs to be attached to a JScrollPane
+		f)	false, it's a part of MouseMotionListener interface
+
+12.6)	a)	true
+		b)	true
+		c)	true
+		d)	false
+		e)	false
+		f)	true
+		g)	false
+
+12.7)	a)	semi-colon
+		b)	panelObject.setLayout(new GridLayout(8,8));
+		c)	FlowLayout.CENTER is the default/empty constructor
+		d)	BorderLayout.EAST;
+
+12.8)	See AlignFrame.java and Align.java
+
+12.9)	See CalcFrame and Calc.java
+
+12.10)	See ColorSelectFrame.java and ColorSelect.java
+
+12.11)	See PrinterFrame.java and Printer.java
+
+12.12)	See TempFrame.java and Temp.java
+
+12.13)	See 12.12)
+
+12.14)	See GuessFrame.java and Guess.java
+
+12.15)	AllFrame.java and All.java
+
+12.16)	See Craps.java, CrapsFrame.java, CrapsTest.java and Status.java
+
+12.17)	See DrawPanel.java, MyBoundedShape.java, MyLine.java, MyOval.java,
+		MyRectange.java, MyShape.java, DrawFrame.java and Draw.java.
+
+12.18)
+
+12.19)	See FontFrame.java and Font.java
+
+12.20)	

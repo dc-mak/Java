@@ -1,0 +1,87 @@
+13.1)	a)	setStroke, Graphics2D
+		b)	GradientPaint
+		c)	drawLine
+		d)	red, green, blue
+		e)	points
+		f)	TexturePaint
+
+13.2)	a)	false, top-left corner of bounding rectangle
+		b)	true
+		c)	true
+		d)	true
+		e)	false, Font method returns size in points
+		f)	false, top-left
+
+13.3)	a)	g.setFont(new Font("SansSerif", Font.PLAIN, 12);
+		b)	g.clearRect(x,y,w,h);
+		c)	Font f = new Font("Serif", Font.BOLD+Font.ITALIC, 12);
+		d)	g.setColor(Color.YELLOW);
+
+13.4)	a)	Ellipse2D.Double
+		b)	Shape (java.awt)
+		c)	Font.PLAIN, Font.BOLD, Font.ITALIC
+		d)	setPaint
+
+13.5)	a)	true
+		b)	true
+		c)	true
+		d)	false
+		e)	true
+		f)	true
+		g)	true
+
+13.6)	See SimplePanel.java and Simple.java
+
+13.7)	See 13.6
+
+13.8)	See 13.7
+
+13.9)	See RandTriPanel.java and RandTri.java
+
+13.10)	See CharsPanel.java and Chars.java
+
+13.11)	See GridPanel.java and Grid.java
+
+13.12)	See 13.11
+
+13.13)	See 13.12
+
+13.14)	See 13.13
+
+13.15)	See TetraPanel.java and Tetra.java
+
+13.16)	See CubePanel.java and Cube.java
+
+13.17)	See CirclePanel.java and Circle.java
+
+13.18)	See ScreenSaverPanel.java and ScreenSaver.java
+		Yeah, it goes on continuously really fast.
+
+13.19)	See 13.18
+
+13.20)	See 13.19
+
+13.21)	See 13.20
+
+13.22)	See 13.21
+
+13.23)	See TurtlePanel.java and Turtle.java
+
+13.24)	See KnightPanel.java, KnightFrame.java and Knight.java
+
+13.25)	See RacePanel.java and Race.java
+
+13.26)	See SpiralPanel.java and Spiral.java
+
+13.27)	See PiePanel.java and PieChart.java
+
+13.28) See Shape.java, ShapePanel.java, ShapeFrame.java and ShapeTest.java
+
+13.29)	See 13.28
+
+13.30) See 13.29
+
+13.31)	See Draw.java, DrawFrame.java, DrawPanel.java, MyShape.java,
+		MyBoundedShape.java, MyLine.java, MyOval.javaa and MyRectangle.java.
+
+13.32)	See LargeFontFrame.java and LargeFont.java

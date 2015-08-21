@@ -19,7 +19,9 @@ public class PatternLoader {
 		//To save patterns as I load them.
 		List<Pattern> resultList = new LinkedList<Pattern>();
 		int lineNum = 0;
-		String fileLine;	//Without fileLine, buff.readLine() would be read twice, once for the null test, and then for the assignment to p, FOR EVERY DAMN LOOP.
+		String fileLine;	//Without fileLine, buff.readLine() would be read
+		// twice, once for the null test, and then for the assignment to p,
+		// FOR EVERY DAMN LOOP.
 
 		while ((fileLine = buff.readLine()) != null) {
 			//Store all valid patterns in a List object

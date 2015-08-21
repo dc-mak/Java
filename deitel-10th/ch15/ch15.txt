@@ -1,0 +1,48 @@
+15.1)	a)	false, these are provided by the Java API/application
+		b)	true
+		c)	true
+		d)	false, that's character files
+		e)	true
+		f)	true X false, Formatter, format
+
+15.2)	a)	Scanner inOldMaster = new Scanner(Paths.get("oldmast.txt"));
+		b)	Scanner inTransaction = new Scanner(Paths.get("trans.txt"));
+		c)	Formatter outNewMaster = new Formatter("newmast.txt");
+		d)	Account record = Account(inOldMaster.nextInt(), inOldMaster.next(),
+								inOldMaster.next(), inOldMaster.nextDouble());
+		e)	TransactionRecord trans = new TransactionRecord();
+			trans.setAccount(inTransaction.nextInt());
+			trans.setAmount(inTransaction.nextDouble());
+		f)	Formatter outNewMaster = new Formatter("newmast.txt");
+			outNewMaster.format("%d %s %s %.2f%n",
+								account.getAccount(), account.getFirstName(),
+								account.getLastName(), account.getBalance());
+
+15.3)	a)	ObjectInputStream inOldMaster = new ObjectInputStream(
+					Files.newInputStream(Paths.get("oldmast.ser")));
+		b)	ObjectInputStream inTransaction = new ObjectInputStream(
+					Files.newInputStream(Paths.get("trans.ser")));
+		c)	ObjectOutputStrean outNewMaster = new ObjectOutputStrean(
+					Files.newOutputStream(Paths.get("newmast.ser")));
+		d)	Account record = (Account) inOldMaster.readObject();
+		e)	TransactionRecord trans_rec = (TransactionRecord) inTransaction.readObject();
+		f)	outNewMaster.writeObject(record);
+
+15.4)	a)	See TransactionRecord.java
+		b)	See Account.java
+		c)	See CreateTestData.java
+		d)	See FileMatch.java
+
+15.5)	See 15.4.
+
+15.6)	See Student.java and StudentSerialize.java
+
+15.7)	See Telephone.java
+
+15.8)	See TakePoll.java and AnalysePoll.java
+
+15.9)	See MyShape.java, DrawPanel.java and DrawFrame.java.
+		I learn the hard way that the reason Draw from Chapter 13 isn't used
+		is because Strokes are not/do not implement Serializable.
+
+15.10)	See Phishing.java
