@@ -19,8 +19,8 @@ public final class Morse {
 			 {	"-----",	".----",	"..---",	"...--",	"....-",
 				".....",	"-....",	"--...",	"---..",	"----." };
 
-		Matcher words = Pattern.compile("\\w+").matcher(args[0]);
-		Pattern pat = Pattern.compile("\\w");
+		Matcher words = Pattern.compile("(\\w|\\d)+").matcher(args[0]);
+		Pattern pat = Pattern.compile("\\w|\\d");
 		while (words.find()) {
 			Matcher mat = pat.matcher(words.group());
 			while (mat.find()) {

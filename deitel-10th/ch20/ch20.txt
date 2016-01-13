@@ -1,0 +1,48 @@
+20.1)	a)	false, method overloading still works
+		b)	false, it immediately precedes the return type
+		c)	true
+		d)	true
+		e)	false, scope is only within method
+		f)	true
+
+ 20.2)	a)	Generic methods, generic classes
+		b)	angle brackets ("<" and ">")
+		c)	type-parameters
+		d)	raw types
+		e)	type-paramerete section
+		f)	<? extends T>
+
+20.3)	It is used to define a class that takes a type as a parameter.
+
+20.4)	See SelSort.java
+
+20.5)	public static <T> void printArray(T[] inputArray,
+				int lowSubscript, int highSubscript) {
+			if (lowSubscript < 0 || highSubscript <= inputArray.length)
+				throw new InvalidSubscriptException();
+			for (T element : inputArray)
+				System.out.printf("%s ", element);
+			System.out.println();
+		}
+
+20.6)	public static void printArray(String[] inputArray) {
+			for (int i = 0; i < inputArray.length; i++)
+				System.out.printf((i != 0 && i % 4 == 0 ? "\n" : "")+
+								"%-12s", inputArray[i]);
+		}
+
+20.7)	public static <T> boolean isEqual(T a, T b) { return a.equals(b); }
+		Wrappers for primitive types and Strings work based on equality of
+		contents whereas everything else is reference equality. (Used a REPL)
+
+20.8)	See Pair.java
+
+20.9)	Same name, different method parameters (length and type, no subtyping)
+
+20.10)	When more than one method matches the call.
+
+20.11)	It creates an ArrayList of Objects that is checked at compile time
+		to guarantee only Empolyees will be in it.
+		The diamond operator <> is done with type inference, allowing the
+		type on the left to dictate the type on the right (without resorting
+		to raw types).

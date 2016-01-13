@@ -1,0 +1,47 @@
+22.1)	a)	JMenu
+		b)	addSeparator
+		c)	stateChanged, ChangeListener
+		d)	anchor
+
+22.2)	a)	false, JFrame can literally have nothing on it
+		b)	true X GridBag*CONSTRAINTS*
+		c)	true
+		d)	true
+
+22.3)	a)	capital b in JMenuBar
+		b)	is missing "new" and the first argument should be one of the
+			SwingConstants (HORIZONTAL or VERTICAL)
+			 +	minimum must be less than maximum and
+			 +	initial value must be in range
+		c)	fill is NONE, HORIZONTAL, VERTICAL, BOTH
+			anchors have the eight compass directions
+		d)	no @Override and paintComponent needs a capital C
+			 +	first thing should be super.paintComponent(g)
+		e)	nothing has been added to the JFrame?
+			 +	needs to have setSize(w, h)
+
+22.4)	a)	submenu
+		b)	setJMenuBar
+		c)	Box
+		d)	JDesktopPane
+
+22.5)	a)	true
+		b)	false
+		c)	true
+
+22.6)	a)	JMenu subMenu = new JMenu("Submenu Color");
+			x.add(subMenu);
+		b)	layout = new GridBagLayout();
+			setLayout(layout);
+			constraints = new GridBagConstraints();
+
+22.7)	See CirclePanel.java, CircleFrame.java
+
+22.8)	See 22.7
+
+22.9)	It's the equivalent of setting either weightx and/or weighty to 0 in
+		direction the constant (NONE/HORIZONTAL/VERTICAL) does not specify.
+
+22.10)	See SyncPanel.java, SyncFrame.java
+
+22.11-16)	See q11-16 folder.

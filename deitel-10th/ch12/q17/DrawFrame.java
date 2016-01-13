@@ -30,6 +30,7 @@ public final class DrawFrame extends JFrame {
 
 	private final JComboBox<String> colorPicker =
 		new JComboBox<String>(colorsOpt);
+
 	private final JComboBox<String> shapePicker =
 		new JComboBox<String>(shapeOpt);
 

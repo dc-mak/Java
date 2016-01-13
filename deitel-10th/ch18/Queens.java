@@ -1,4 +1,9 @@
 // Ex 18.15: Eight Queens puzzle.
+//		TODO: REDO!
+//		[r1,r2,r3,r4,r5,r6,r7,r8]
+//		where each array position is a column index and each element is a row
+//		index and the array is simply a permutation of [1,2,3,4,5,6,7,8] that
+//		satisfies r_i - i != r_j - j for all 0 <= i,j <= 7 such that i <> j.
 
 import java.util.Arrays;
 import java.util.ArrayList;

@@ -15,5 +15,12 @@ hs_err_pid*
 # java1A
 java1A/.metadata/**
 
+# and only my source files in java1B
+java1B/**
+!java1B/workspace/Further Java/src/uk/ac/cam/dcm41/fjava/**"
+
 # Deitel and Deitel 10th
 deitel-10th/examples/**
+
+# IdeaVim
+.idea*

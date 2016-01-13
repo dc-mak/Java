@@ -1,0 +1,126 @@
+21.1)	a)	referential
+		b)	stack
+		c)	predicate
+		d)	FIFO
+		e)	link
+		f)	garbage-collection
+		g)	queue
+		h)	tree
+		i)	LIFO
+		j)	binary
+		k)	root
+		l)	branch/link X child or subtree
+		m)	leaf
+		n)	pre, in, post
+		o)	-d
+		p)	classloader
+		q)	-classpath or -cp
+		r)	package declaration
+
+21.2)	A linked list can have elements inserted and removed from *any* point in it.
+		A stack can only have elements inserted and removed from one/the same end.
+
+21.3)	A queue can only have elements inserted and removed from opposite ends.
+
+21.4)	a)	Allows a data structure to be defined once and used in multiple
+			instances.
+		b)	Data structures can be adapted and/or extended with extra functionality
+			as fit, since it is only necessary to define the changes.
+		c)	Compositon allows code reuse but allowing more flexibility by
+			allowing more control of the interface presented to other objects.
+
+21.5)	pre:
+		49, 28, 28, 11, 19, 40, 32, 44, 83, 71, 69, 72, 97, 92, 99
+		in:
+		11, 18, 19, 28, 32, 40, 44, 49, 69, 71, 72, 83, 92, 97, 99
+		post:
+		11, 19, 18, 32, 40, 44, 28, 69, 72, 71, 92, 99, 97, 83, 49
+
+
+21.6)	public final class ListConcatenate {
+			public static <T> void concatenate(List<T> a, List<T> b) {
+				while (!b.isEmpty()) {
+					a.insertAtBack(b.removeFromFront()); } } }
+
+21.7)	See SortedList.java and SortedListTest.java
+
+21.8)	See 21.7
+
+21.9)	See List.java ListTest.java
+
+21.10)	See Sentence.java
+
+21.11)	See Palindrome.java
+
+21.12)	See InfixToPostfixConverter.java
+
+21.13)	See PostfixEvaluator.java
+
+21.14)	See 21.14
+
+21.15)	See Supermarket.java. Trend seems to be that 1 to 3 minutes is more
+		effective than 1 to 4.
+
+21.16)	import java.util.List;
+		import java.util.LinkedList;
+		...
+			List<T> data = new LinkedList<>();
+			...
+			public TreeNode(T nodeData) {
+				data.add(nodeData);
+				...
+
+			public void insert(T insertValue) {
+				if (insertValue.compareTo(data.get(0)) < 0) 
+				...
+				else if (insertValue.compareTo(data.get(0)) > 0) 
+				...
+				else // data.get(0) == insertValue
+					data.add(insertValue);
+				...
+
+21.17)	See TokenTree.java
+
+21.18)	"Describe"
+		Scan along the array and if there is nothing that matches the new
+		element then insert it at the end. If the array is full, increase in
+		by a constant factor (1.5+).
+		Each insertion is linear due to the amortized contant growing the array
+		and linear search. Although if you insert it in order and you use an
+		array then you could easily do a binary search (but then this cost of
+		moving elements for insertion at anywhere but the end).
+
+21.19)	public int depth() {
+		   return 1 + Math.max(leftNode == null ? 0 : leftNode.depth(),
+							   rightNode == null ? 0 : rightNode.depth()); }
+
+		public int depth() { return root.depth(); }
+
+21.20)	See 21.9
+
+21.21)	See 21.20
+
+21.22)	See Tree.java and TreeTest.java
+
+21.23)	See 21.22
+
+21.24)	See 21.23
+
+21.25)	See 21.24
+
+21.26)	See 21.21
+
+21.27)	See 21.26. It would hamper performance significantly for long queues,
+		causing a previously O(1) time operation to take O(n).
+
+21.28)	Increasing/decreasing order will just turn it into a linked list in shape.
+		Needs as wide a shape with least depth possible for fast searching.
+
+21.29)
+
+21.30)	public class Queue<T> extends List<T> {
+			public Queue() { super("queue"); }
+			public void enqueue(T item) { inserAtBack(item); }
+			public T dequeue() throw EmptyListException { return removeFromFront(); }
+		}
+

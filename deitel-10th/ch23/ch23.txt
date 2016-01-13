@@ -1,0 +1,108 @@
+23.1)	a)	it successfully completes its task or throws an error
+				(or its run method completes)
+		b)	sleep(int duration), Thread
+		c)	timed waiting
+		d)	ready, running
+		e)	Executor
+		f)	shutdown
+		g)	Producer-Consumer, Producer, Consumer
+		h)	synchronized
+
+23.2)	a)	signal() 
+		b)	signalAll()
+		c)	await(), wait
+		d)	ArrayBlockingQueue
+		e)	now()
+		f)	toMillis()
+		g)	getPercentInstance()
+		h)	format(long)
+		i)	parallelSetAll(T[], IntFunction<? extends T>)
+		j)	parallelPrefix(T[], BinaryOperator<T>)
+		k)	stream()
+		l)	Runnables, Suppliers
+
+23.3)	a)	true
+		b)	false, of lower priority
+		c)	false, ready
+		d)	true
+
+23.4)	a)	true X between
+		b)	true
+		c)	true
+		d)	false
+		e)	false
+
+23.5)	a)	false, when the event it's waiting for occurs
+		b)	true
+		c)	true
+		d)	true
+
+23.6)	a)	A blocked thread can't use a processor, even if one is available.
+			A runnable thread is blocked when it can't be completed immediately.
+		b)	The process (ha!) of determing which thread to run next.
+		c)	Time-slice of the processor given to a thread
+		d)	restricting access to non-threadsafe object to one thread only
+		e)	operation that cannot be subdivided
+			- any other thread must wait until the atom is done executing
+		f)	being continually preempted
+		g)	a monitor ensures that an object's monitor lock is only held by
+			one thread at a time
+		h)	the urgency/importance of how soon a thread needs to run
+
+23.7)	a)	deadlock: threads are each waiting on another so none can progress
+			starvation: threads is deprived of execution (by continual
+			pre-emption by higher-priority threads)
+		b)	wait: wait for an event (via a notify[All])
+			sleep: wait for specified amount of time (or event if sooner)
+		c)	concurrency: more than one tas making progress at a time
+			parallelism: two (or more) executing simultaneously
+		d)	ready: an state assigned to a thread by the OS
+				- ready and in queue to execute
+			runnable: a thread state of the JVM
+				- either running or ready to be run
+		e)	notify: wakes up one thread waiting on an object
+			notifyAll: wakes up all threads waiting on an object
+		f)	waiting state: thread is waiting on an even
+			timed waiting state: thread is waiting on an event or timer to expire
+		g)	blocked: waiting for a task to complete
+			dead: terminated thread
+
+23.8)	Apart from IO, don't really know what else.
+		The OS is the thing that blocks, so it is also the one that restores
+			it to runnable.
+
+23.9)	Deadlock:
+		docs.oracle.com/javase/tutorial/essential/concurrency/deadlock.html
+		A situation with (circular?) response method set-up (like mutual recursion)
+
+		Starvation:
+		Greedy threads that invoke synchronized methods on shared objects often,
+		blocking other threads.
+
+23.10) See Ball.java, BallPanel.java and BallBounce.java.
+	   Given more time (and now that I have more experience) I might have done
+	   the squish and motion logic better. Also, would have looked into Alpha-
+	   Composite in more detail so that part of a ball aren't whited out.
+	   For some reason, it's not possible to have getGraphics() not return null
+	   in the constructor for BallPanel, so I have to grab it *each time*.
+
+23.11) See 21.10.
+
+23.12) See 21.11.
+
+23.13)	Locks (with a Reentrant lock) support timed waits, interruptible waits
+		and multiple Condition queues per Lock in addition to monitor locks
+		with the 'synchronized' keyword.
+
+23.14)	A highway could be seen as a producer and a local road as a consumer
+		in a highway off-ramp situation. The size of the off-ramp is then a
+		bounded buffer which limits the number of items being produced so they
+		are consumed appropriately. Designers could choose the size of the off
+		ramp by running simulations where the highway and local road are
+		concurrent producers and consumers respectively, so as to minimise thread
+		wait times both ways.
+
+23.15)
+23.16)
+23.17)	Change stream with parallelStream and bracket computation with Instants
+		for Duration between them.

@@ -8,4 +8,7 @@ Chapter 14:
 24-28
 
 Chapter 18:
-21
+18,21
+
+Chapter 21:
+29, 31-35
