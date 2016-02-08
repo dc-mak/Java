@@ -13,14 +13,48 @@
 hs_err_pid*
 
 # java1A
-java1A/.metadata/**
+java1A/*
+!java1A/uk/
+
+java1A/uk/*
+!java1A/uk/ac/
+
+java1A/uk/ac/*
+!java1A/uk/ac/cam/
+
+java1A/uk/ac/cam/*
+!java1A/uk/ac/cam/dcm41/
 
 # and only my source files in java1B
-java1B/**
-!java1B/workspace/Further Java/src/uk/ac/cam/dcm41/fjava/**"
+java1B/*
+!java1B/workspace/
+
+java1B/workspace/*
+!java1B/workspace/Further Java/
+
+java1B/workspace/Further Java/*
+!java1B/workspace/Further Java/src/
+
+java1B/workspace/Further Java/src/*
+!java1B/workspace/Further Java/src/uk/
+
+java1B/workspace/Further Java/src/uk/*
+!java1B/workspace/Further Java/src/uk/ac/
+
+java1B/workspace/Further Java/src/uk/ac/*
+!java1B/workspace/Further Java/src/uk/ac/cam/
+
+java1B/workspace/Further Java/src/uk/ac/cam/*
+!java1B/workspace/Further Java/src/uk/ac/cam/dcm41/
+
+java1B/workspace/Further Java/src/uk/ac/cam/dcm41/*
+!java1B/workspace/Further Java/src/uk/ac/cam/dcm41/fjava/
+
+java1B/workspace/Further Java/src/uk/ac/cam/dcm41/fjava/tick0/test-suite/
+java1B/workspace/Further Java/src/uk/ac/cam/dcm41/fjava/tick0/test-text/
 
 # Deitel and Deitel 10th
-deitel-10th/examples/**
+deitel-10th/examples/
 
 # IdeaVim
 .idea*
